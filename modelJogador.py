@@ -25,3 +25,10 @@ def gerar_lista_jogode3(jogador1, jogador2):
     lista_jogode3[1][2] = jogador2.carta2
     lista_jogode3[1][3] = jogador2.carta3
     return lista_jogode3
+
+
+def instanciar_jogadores(nome_jogador1, nome_jogador2):
+    jogador1 = jogador(nome_jogador1)
+    jogador2 = jogador(nome_jogador2)
+    lista_jogode3 = gerar_lista_jogode3(jogador1, jogador2)
+    return jogador1, jogador2, lista_jogode3
